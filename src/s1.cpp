@@ -2,6 +2,6 @@
 using std::cout;
 
 int main() {
-      cout << "TESTE";
+      cout << "hello world";
       return 0;
 }
