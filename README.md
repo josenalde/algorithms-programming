@@ -1,2 +1,2 @@
 # algorithms-programming
-scripts and classes material - algorithms and programming
+scripts and class material - algorithms and programming
