@@ -6,6 +6,7 @@ using namespace std;
 int main() {
   cout.precision(11);
   cout << fixed;
+  double qPrecision = 5e-3; // 5e-12 (test your machine!!!)
   double piant = 0, pi, termo, dif;
   int i, indiceTermo;
   double soma = 0;
@@ -22,9 +23,9 @@ int main() {
     cout << dif << endl; //may be commented
     
     indiceTermo++;
-    if (dif <= 0.005) break;
+    if (dif <= qPrecision) break;
     piant = pi;
   }
-  cout << endl <<"PI value for the required precision: "<< pi<<endl;
+  cout << endl <<"PI value for the required precision of " << qPrecision << ": " << pi <<endl;
   return 0;
 }
