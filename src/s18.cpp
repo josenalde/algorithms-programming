@@ -30,7 +30,7 @@ int main() {
     start_t = clock();
     // switch these two lines below to compare sorting times
     //qsort(x, sV, sizeof(double), comp); //quick sort
-    //sort(y.begin(), y.end())
+    //sort(y.begin(), y.end());
     //sort(y.begin(), y.end(), stlcomp);
     ordenaDec(x, sV); //insertion sort (based on exchange)
     end_t = clock();
