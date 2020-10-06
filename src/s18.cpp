@@ -53,6 +53,7 @@ void ordenaDec(double v[], unsigned int tam) {
             aux = v[i];
             v[i] = v[i+1];
             v[i+1] = aux;
+            //swap(v[i], v[i+1]); // it is an option the use of std::swap (defined in <algorithm>), comment the three lines 53-55
             i = -1; // forced reset
         }
     }
