@@ -1,3 +1,5 @@
+//by Prof. Josenalde Oliveira
+
 #include <iostream>
 using namespace std;
 
@@ -13,7 +15,7 @@ typedef struct {
 bool detectaColisao(Retangulo r1, Retangulo r2) {
     bool t1 = (r2.pie.x > r1.psd.x);
     bool t2 = (r1.pie.x > r2.psd.x);
-	bool t3 = ((r2.pie.y > r1.psd.y) || (r2.psd.y < r1.pie.y));
+    bool t3 = ((r2.pie.y > r1.psd.y) || (r2.psd.y < r1.pie.y));
     bool t4 = ((r1.pie.y > r2.psd.y) || (r1.psd.y < r2.pie.y));
     if (t1&&t3 || t2&&t4 || t1 || t2) return false;
     else return true;
@@ -32,9 +34,9 @@ int main() {
 	bool t4 =  r1.pie.y < r1.psd.y && r2.pie.y < r2.psd.y;
 				
 	if (t1 && t2 && t3 && t4) {
-		if (detectaColisao(r1,r2)) cout << true;
-        else cout << false;
-    }
+	  if (detectaColisao(r1,r2)) cout << true;
+          else cout << false;
+        }
     return 0;
 }
   
