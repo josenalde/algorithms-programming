@@ -21,5 +21,5 @@ int main() {
     f1 = f;
   }
   for (int i = 0; i < v.size(); i++)
-    std::cout << v[i] << "\n";
+    std::cout << stof(v[i]) << "\n"; // Convert string to float
 }
