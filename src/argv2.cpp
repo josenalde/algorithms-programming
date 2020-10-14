@@ -11,15 +11,16 @@ int main() {
   auto f1 = listArgs.find(":");
  
   if (f1 != string::npos) {
-    //cout << "entrei" << f1;
     v.push_back(listArgs.substr(0,f1));
   }
+  
   size_t f;
   while (f1 != string::npos) {
     f = listArgs.find(":", f1+1);
     v.push_back(listArgs.substr(f1+1,f-f1-1));
     f1 = f;
   }
+  // display string values as float numbers
   for (int i = 0; i < v.size(); i++)
     std::cout << stof(v[i]) << "\n"; // Convert string to float
 }
