@@ -5,9 +5,15 @@
 #include <vector>
 using namespace std;
 
-int main() {
-  string listArgs = "5.4:6.67:-3.567:1";
+int main(int argc, char *argv[]) {
+  //string listArgs = "5.4:6.67:-3.567:1";
+  string listArgs;
   vector<string> v;
+  vector<string> args;
+  for (int i = 1; i < argc; i++) {
+    args.push_back(argv[i]);
+  }
+  listArgs = args[0];
   auto f1 = listArgs.find(":");
  
   if (f1 != string::npos) {
