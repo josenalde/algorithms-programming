@@ -28,5 +28,5 @@ int main(int argc, char *argv[]) {
   }
   // display string values as float numbers
   for (int i = 0; i < v.size(); i++)
-    std::cout << stof(v[i]) << "\n"; // Convert string to float
+    std::cout << stof(v[i]) << "\n"; // Convert string to float; stoi convert string to int
 }
