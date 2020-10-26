@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
    vector<unsigned int> vSc;
 
    unsigned int sL{0}, sC{0}, sDp{0}, sDs{0};
-   // soma diagonais
+   // percorre toda a matriz, realizando todas as somas necessarias
    for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 // dprincipal
@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
    
    bool qMagico = true; // flag assume que eh quadrado magico
    
-   for (int i = 1; i < vSl.size(); i++) {
+   for (int i = 1; i < vSl.size(); i++) { // percorre a dimensão N
        if (vSl[i] != vSl[i-1]) {
            qMagico = false;
            break;
