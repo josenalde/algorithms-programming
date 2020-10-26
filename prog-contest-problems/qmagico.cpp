@@ -5,7 +5,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
    unsigned short N;
-   //unsigned short N[1000][1000];
+   //unsigned int Q[1000][1000];
    cin >> N;
    //3 ≤ N ≤ 1000
    if (N >= 3 && N <= 1000) {
