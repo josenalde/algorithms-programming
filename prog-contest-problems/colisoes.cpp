@@ -3,14 +3,14 @@
 #include <iostream>
 using namespace std;
 
-typedef struct {
+struct Ponto {
     int x, y;
-} Ponto;
+};
 
-typedef struct {
+struct Retangulo {
     Ponto pie;
     Ponto psd;
-} Retangulo;
+};
 
 bool detectaColisao(Retangulo r1, Retangulo r2) {
     bool t1 = (r2.pie.x > r1.psd.x);
