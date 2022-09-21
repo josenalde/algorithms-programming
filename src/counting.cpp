@@ -15,5 +15,10 @@ int main()
     cout << "\nContagem para o 3 : "
          << count(v.begin(), v.end(), 3);
   
+    string str = "if22 eaj info ufrn eaj";
+  
+    cout << "Quantas vezes 'e' aparece : " 
+         << count(str.begin(), str.end(), 'e');
+  
     return 0;
 }
