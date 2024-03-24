@@ -1,6 +1,6 @@
 # https://olimpiada.ic.unicamp.br/pratique/p1/2007/f1/perdida/resultado/ - does not consider repetitions
 # IBM coding assessment: equivalent (return -1 if not found); vector may contain repetitions
-
+# O(N)
 def find_lost(v):
     aux = [0]*(len(v) + 1)
     for i in range(len(v)):
