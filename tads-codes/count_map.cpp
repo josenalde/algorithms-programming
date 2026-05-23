@@ -8,7 +8,7 @@ using std::vector;
 using std::map;
 //by Josenalde Oliveira - C++ developer
 int main() {
-    vector<int> v = {1,5,1,1,1,3,3,9,0,2,5,2,9,9,8,7,4,3,7}; //teste 1
+    vector<int> v = {1,5,1,1,1,3,3,9,0,2,5,2,9,9,8,7,4,3,7,6}; //teste 1
     //vector<int> v = {0,1}; // teste 2
     //esperado 0:1, 1:2, 2:2, 3:2, 4:1, 5:2, 7:1, 8:1, 9:2
     //1. verificar cada item do vetor, quantas vezes aparece
