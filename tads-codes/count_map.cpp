@@ -26,7 +26,7 @@ int main() {
     for (auto i : dictCounts) { //usar auto para pegar automaticamente os tipos de chave:valor
         cout << " Item: " << i.first << ":" << i.second << endl;
     }
-    cout << "-----------Com ordenacao e matriz-------------------\n";
+    cout << "-----------Com ordenação e matriz-------------------\n";
     // solução 2: com ordenação e matrizes
     sort(v.begin(), v.end());
     //DEBUG
