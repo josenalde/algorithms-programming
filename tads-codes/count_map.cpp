@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <map> //para map
+#include <unordered_map>
 #include <algorithm> //para count
 using std::cout;
 using std::endl;
 using std::vector;
 using std::map;
+using std::unordered_map;
 //by Josenalde Oliveira - C++ developer
 int main() {
     vector<int> v = {1,5,1,1,1,3,3,9,0,2,5,2,9,9,8,7,4,3,7,6}; //teste 1
@@ -14,7 +16,8 @@ int main() {
     //1. verificar cada item do vetor, quantas vezes aparece
     //solução 1 - count com map: nao permite chaves repetidas
     //            se encontrar mesma chave, guarda apenas a primeira
-    map<int,int> dictCounts; //estrutura de dados
+    //map<int,int> dictCounts; //estrutura de dados (arvore balanceada)
+    unordered_map<int,int> dictCounts; //hash_table
     for (int i : v) {
         dictCounts[i] = count(v.begin(), v.end(), i);
         // equivalente a:
@@ -26,7 +29,7 @@ int main() {
     for (auto i : dictCounts) { //usar auto para pegar automaticamente os tipos de chave:valor
         cout << " Item: " << i.first << ":" << i.second << endl;
     }
-    cout << "-----------Com ordenação e matriz-------------------\n";
+    cout << "-----------Com ordenacao e matriz-------------------\n";
     // solução 2: com ordenação e matrizes
     sort(v.begin(), v.end());
     //DEBUG
@@ -62,3 +65,13 @@ int main() {
 
     return 0;
 }
+
+/*
+Use std::map quando: Você precisa que os dados sejam listados ou 
+recuperados em uma ordem específica (alfabética, cronológica, etc.), 
+ou quando você frequentemente precisa iterar pelos elementos ordenados 
+de forma eficiente.Use std::unordered_map quando: Você só precisa 
+mapear pares de chave-valor e a ordem dos dados não importa, 
+mas você precisa da máxima velocidade possível para inserções, 
+buscas e remoções.
+*/
